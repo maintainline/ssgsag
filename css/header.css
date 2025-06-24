@@ -43,6 +43,7 @@
 .header_right a {
   text-decoration: none;
   color: black;
+  background-color: #fff;
 }
 
 .header_right button {
