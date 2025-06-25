@@ -2,6 +2,8 @@
   position: relative;
 }
 .layout {
+  overflow: visible !important;
+  position: relative;
 }
 
 .banner_wrap {
@@ -10,19 +12,28 @@
   padding-bottom: 20px;
   padding-top: 110px;
 }
+
+.layout .banner_wrap {
+  overflow: visible !important; /* 혹시 숨기고 있다면 보이도록 강제 */
+}
 .banner_slide {
   position: relative;
-
   display: flex;
-
   justify-content: center;
   padding: 0 20px;
 }
+.sw_banner {
+  width: 100vw;
+}
+.swiper-slide {
+  width: 100vw;
+}
 
 .banner_slide_item {
-  display: flex;
+  display: block;
   overflow: hidden;
 
+  width: 640px;
   height: 320px;
   border-radius: 15px;
 }
@@ -72,4 +83,10 @@
   transform: translateX(-166px) translateY(240px);
 }
 .banner_slide_pg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  scale: 85%;
+  color: black;
 }
