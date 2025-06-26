@@ -1,9 +1,10 @@
 .header {
+  background-color: #fff;
   border-bottom: 1px solid#eaeaea;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9999;
   width: 100%;
 }
 
@@ -13,6 +14,7 @@
   width: 100%;
   max-width: 1024px;
   background-color: #fff;
+  /* overflow: visible; */
   /* background-color: red; */
 }
 
@@ -31,11 +33,12 @@
   position: relative;
   gap: 34px;
 }
-
+/*  추천공고 점작업 span or after */
 .header_left a {
   text-decoration: none;
   color: black;
 }
+
 .header_right {
   display: flex;
   justify-content: center;

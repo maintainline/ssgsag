@@ -1,32 +1,39 @@
 .banner {
   position: relative;
+  height: 520px;
 }
 .layout {
-  overflow: visible !important;
-  position: relative;
+  /* unicode-bidi: isolate; */
 }
 
 .banner_wrap {
+  overflow: visible !important;
   position: relative;
-
+  /* background-color: red; */
   padding-bottom: 20px;
   padding-top: 110px;
 }
 
 .layout .banner_wrap {
-  overflow: visible !important; /* 혹시 숨기고 있다면 보이도록 강제 */
 }
+
 .banner_slide {
+  /* background-color: red; */
   position: relative;
   display: flex;
   justify-content: center;
   padding: 0 20px;
 }
 .sw_banner {
+  /* display: contents; */
+  /* justify-content: center; */
   width: 100vw;
+  overflow: visible !important;
 }
 .swiper-slide {
-  width: 100vw;
+  width: 640px;
+  /* padding:0 213px; */
+  padding: 0 40px;
 }
 
 .banner_slide_item {
@@ -88,5 +95,8 @@
   justify-content: center;
   padding-top: 30px;
   scale: 85%;
-  color: black;
+}
+
+.banner_slide_pg .swiper-pagination-bullet-active {
+  background-color: #202020; /* 파란색 */
 }

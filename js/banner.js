@@ -48,8 +48,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
   function makeSlide() {
     const swiper = new Swiper(".sw_banner", {
-      slidesPerView: 1,
+      slidesPerView: "auto",
       spaceBetween: 25,
+      // 슬라이드 중앙에 위치하게 
+      centeredSlides: true,
       loop: true,
       speed: 1500,
       autoplay: {
