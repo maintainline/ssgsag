@@ -1,0 +1,76 @@
+.hot_notice_section {
+  background-color: #fff;
+  padding-top: 30px;
+}
+
+.hot_notice_title {
+  padding-left: 18px;
+  /* background-color: red; */
+  padding-bottom: 20px;
+  font-size: 22px;
+
+  font-weight: 600;
+}
+.hot_notice_title .point {
+  color: #4263ff;
+}
+.hot_notice_wrap {
+  padding-left: 18px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2열 구성 */
+  gap: 24px 40px; /* row-gap, column-gap */
+}
+.notice_item {
+  /* background-color: red; */
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.notice_img {
+  background-color: antiquewhite;
+  width: 102px;
+  height: 102px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.notice_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.notice_text {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  gap: 2px;
+}
+.notice_category {
+  display: inline-block; /*글자에 맞춘 박스 만들기 */
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: 11px;
+  color: #3366ff;
+  font-weight: 400;
+  background-color: #e1e7f8;
+  margin-bottom: 2px;
+}
+.notice_title {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 4px;
+  justify-content: space-between;
+  height: 100%;
+}
+.notice_d_day {
+  padding-top: 8px;
+  color: red;
+  font-size: 17px;
+  font-weight: 600;
+}
