@@ -1,12 +1,18 @@
 .hot_notice_section {
+  margin: 0 202px;
+  min-height: 660px;
+  display: flow-root;
   background-color: #fff;
+  /* border-bottom: 1px solid #000; */
   padding-top: 30px;
 }
-
+.hot_notice_section .layout {
+  background-color: transparent; /* 또는 제거 */
+}
 .hot_notice_title {
-  padding-left: 18px;
+  padding-left: 28px;
   /* background-color: red; */
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   font-size: 22px;
 
   font-weight: 600;
@@ -15,11 +21,17 @@
   color: #4263ff;
 }
 .hot_notice_wrap {
+  /* background-color: green; */
   padding-left: 18px;
-
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr; /* 2열 구성 */
-  gap: 24px 40px; /* row-gap, column-gap */
+  gap: 8px 30px; /* row-gap, column-gap */
+}
+.hot_notice_wrap::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .hot_notice_box {
