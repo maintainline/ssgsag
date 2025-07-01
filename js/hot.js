@@ -72,6 +72,7 @@ window.addEventListener("load", function () {
 
   hotData.forEach((item) => {
     html += `
+    <div class="hot_notice_box">
     <div class="notice_item">
     <div class="notice_img">
         <img src="${item.img}" alt="${item.alt}" />
@@ -82,6 +83,7 @@ window.addEventListener("load", function () {
         ${item.title}
         </div>
         <div class="notice_d_day">${item.day}</div>
+    </div>
     </div>
     </div>
     `;
