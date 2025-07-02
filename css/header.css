@@ -15,7 +15,6 @@
   max-width: 1024px;
   background-color: #fff;
   /* overflow: visible; */
-  /* background-color: red; */
 }
 
 .header_top {
@@ -33,25 +32,27 @@
   position: relative;
   gap: 34px;
 }
+.header_left img {
+  padding-right: 22px;
+}
 /*  추천공고 점작업 span or after */
 .header_left a {
-  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
   color: black;
 }
 
 .header_right {
   display: flex;
   justify-content: center;
-  font-size: 14px;
-  gap: 34px;
+  font-size: 15px;
+  gap: 30px;
 }
 .header_right img {
   transform: translateY(30%);
   padding-right: 5px;
 }
 .header_right a {
-  text-decoration: none;
-
   color: rgb(97, 97, 97);
 }
 

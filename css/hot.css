@@ -1,4 +1,4 @@
-.hot_notice_section {
+.hot {
   margin: 0 202px;
   min-height: 660px;
   display: flow-root;
@@ -6,8 +6,9 @@
   /* border-bottom: 1px solid #000; */
   padding-top: 30px;
 }
-.hot_notice_section .layout {
-  background-color: transparent; /* 또는 제거 */
+.hot .layout {
+  /* 또는 제거 */
+  background-color: transparent;
 }
 .hot_notice_title {
   padding-left: 28px;
@@ -21,8 +22,11 @@
   color: #4263ff;
 }
 .hot_notice_wrap {
+  position: relative;
+
+  overflow: visible;
   /* background-color: green; */
-  padding-left: 18px;
+  padding-left: 5px;
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr; /* 2열 구성 */
@@ -35,15 +39,16 @@
 }
 
 .hot_notice_box {
+  overflow: hidden;
   position: relative;
   display: flex;
   align-items: flex-start;
-  gap: 14px;
+  gap: 0px;
   padding: 10px;
   border-radius: 12px;
-  width: 100%;
+  width: 488px;
   cursor: pointer;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   /* 기존 이미지 및 텍스트 스타일 유지 */
   background-color: transparent;

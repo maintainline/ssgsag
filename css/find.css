@@ -1,4 +1,4 @@
-.find_notice_section {
+.find {
   height: 882px;
   padding-top: 56px;
   border-top: 1px solid #dadada;
@@ -7,8 +7,9 @@
 .layout {
 }
 .find_notice_title {
-  padding-left: 28px;
-  padding-bottom: 20px;
+  /* background-color: red; */
+  padding-left: 32px;
+  padding-bottom: 5px;
   font-size: 24px;
   font-weight: 700;
 }
@@ -19,28 +20,79 @@
 }
 
 .find_notice_wrap {
-  position: relative;
-  width: 242px;
-  height: 351px;
-  margin-left: 28px;
-}
-.find_notice_box {
-  background-color: red;
+  /* display: grid;
+  grid-template-columns: repeat(4,1fr);*/
+  gap: 10px;
 
   display: flex;
-  flex-direction: column; /* 세로 방향 정렬 */
-  align-items: center; /* 수평 가운데 정렬 */
-  justify-content: center; /* 수직 가운데 정렬 */
-  text-align: center;
+  flex-wrap: wrap;
+
+  /* position: relative; */
+  width: 100%;
+  height: 351px;
+  margin-left: 22px;
 }
+.find_notice_box {
+  position: relative;
+  width: 242px;
+  height: 355px;
+  /* background-color: red; */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column; /* 세로 방향 정렬 */
+  /* 수평 가운데 정렬 */
+  align-items: center;
+  /* 수직 가운데 정렬 */
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+
+  background-color: transparent;
+  transition: transform 0.3s ease;
+}
+.find_notice_box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* 박스 반투명 */
+  background-color: rgba(230, 230, 230, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+  z-index: 0;
+  pointer-events: none;
+}
+.find_notice_box:hover::before {
+  opacity: 1;
+}
+
 .find_item {
   position: relative;
 }
 .find_img {
+  overflow: hidden;
   width: 224px;
   height: 224px;
   background-color: aqua;
   border-radius: 13px;
+}
+
+.find_notice_box .find_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  /* 기본상태는 원래 크기 */
+  transform: scale(1);
+}
+.find_notice_box:hover .find_img img {
+  /* 살짝 확대 */
+  transform: scale(1.05);
 }
 .find_text {
   text-align: left;
@@ -59,6 +111,8 @@
   color: rgb(253, 143, 76);
 }
 .find_title {
+  height: calc(1.4em * 2);
+
   padding-top: 4px;
   color: #444;
   font-size: 15px;

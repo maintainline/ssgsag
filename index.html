@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>슥삭클론</title>
+    <!-- 기본 틀 css -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="css/common.css" />
 
     <!-- swiper -->
     <link
@@ -28,14 +35,17 @@
     <script src="js/hot.js"></script>
     <!-- find 연결 -->
     <link rel="stylesheet" href="css/find.css" />
+    <script src="js/find.js"></script>
+    <!-- app 연결 -->
+    <link rel="stylesheet" href="css/app.css" />
+    <!-- footer연결 -->
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
 
   <body>
-    <!-- 영역 구분 : 내용과 바탕 -->
     <div class="wrap">
-      <!-- 영역구분 : 상단 -->
+      <!-- Start 상단 -->
       <header class="header">
-        <!-- 레이아웃용 -->
         <div class="layout">
           <div class="header_top">
             <!-- 상단 왼쪽 -->
@@ -59,35 +69,33 @@
           </div>
         </div>
       </header>
-      <!-- 영역구분 : 내용 -->
-      <main class="main">
-        <!-- 배너 -->
-        <div class="banner">
-          <div class="layout">
-            <!-- 배너 슬라이드 -->
-            <div class="banner_wrap">
-              <div class="banner_slide">
-                <!-- swiper -->
-                <div class="swiper sw_banner">
-                  <div class="swiper-wrapper">
-                    <!-- api 연동 -->
-                  </div>
-                </div>
-              </div>
-
-              <!-- 버튼 생성 -->
-              <button class="banner_slide_prev">
-                <img src="images/icon_linkArrow.svg" alt="이전" />
-              </button>
-              <button class="banner_slide_next">
-                <img src="images/icon_linkArrow.svg" alt="다음" />
-              </button>
-              <!-- 페이지 네이션 -->
-              <div class="banner_slide_pg">페이지 네이션</div>
+      <!-- End 상단 -->
+      <!-- Start 배너 -->
+      <div class="banner">
+        <!-- 배너 슬라이드 -->
+        <div class="banner_wrap">
+          <!-- swiper -->
+          <div class="swiper sw_banner">
+            <div class="swiper-wrapper">
+              <!-- api 연동 -->
             </div>
           </div>
+
+          <!-- 버튼 생성 -->
+          <button class="banner_slide_prev">
+            <img src="images/icon_linkArrow.svg" alt="이전" />
+          </button>
+          <button class="banner_slide_next">
+            <img src="images/icon_linkArrow.svg" alt="다음" />
+          </button>
+          <!-- 페이지 네이션 -->
+          <div class="banner_slide_pg">페이지 네이션</div>
         </div>
-        <div class="button_item">
+      </div>
+      <!-- End 배너 -->
+      <!-- Start 버튼 카테고리 -->
+      <div class="button">
+        <div class="button_wrap">
           <button class="bt_activity">
             <p>HOT</p>
             <div class="img_box">
@@ -114,53 +122,102 @@
             <a href="#">교육·강연</a>
           </button>
         </div>
-        <div class="cock">
-          <div class="layout">
-            <h2 class="cock_main_title">슥삭이 <b>콕</b> 집은 공고</h2>
-            <div class="cock_list">
-              <!-- js작업 -->
-              <div class="cock_item"></div>
-            </div>
+      </div>
+      <!-- End 버튼 카테고리 -->
+      <!--Start 콕 공고 -->
+      <div class="cock">
+        <div class="layout">
+          <p class="cock_main_title">슥삭이 <b>콕</b> 집은 공고</p>
+          <div class="cock_list">
+            <!-- js작업 -->
+            <div class="cock_item"></div>
           </div>
         </div>
-        <div class="hot_notice_section">
-          <div class="layout">
-            <h2 class="hot_notice_title">
-              <span class="point">요즘</span> 핫한 공고만 찾고 있다면?
-            </h2>
-            <div class="hot_notice_wrap">
-              <!-- js 연동 -->
-            </div>
+      </div>
+      <!--End 콕 공고 -->
+      <!--Start 핫 공고 -->
+      <div class="hot">
+        <div class="layout">
+          <h2 class="hot_notice_title">
+            <span class="point">요즘</span> 핫한 공고만 찾고 있다면?
+          </h2>
+          <div class="hot_notice_wrap">
+            <!-- js 연동 -->
           </div>
         </div>
-        <div class="find_notice_section">
-          <div class="layout">
-            <h2 class="find_notice_title">
-              <span class="find_point">방금</span> 게시된 공고만 찾고 있다면?
-            </h2>
-            <div class="find_notice_wrap">
-              <!-- js 연동 -->
-              <div class="find_notice_box">
-                <div class="find_item">
-                  <div class="find_img">
-                    <img src="#" alt="공고이미지_1" />
-                  </div>
-                  <div class="find_text">
-                    <div class="find_category">교육/강연</div>
-                    <div class="find_title">
-                      [한경닷컴] 실시간 데이터 처리 자바 웹 서비스
-                      개발과정(채용지원)
-                    </div>
-                    <div class="find_d_day">D-1</div>
-                  </div>
+      </div>
+      <!--End 핫 공고 -->
+      <!--Start 찾은 공고 -->
+      <div class="find">
+        <div class="layout">
+          <h2 class="find_notice_title">
+            <span class="find_point">방금</span> 게시된 공고만 찾고 있다면?
+          </h2>
+          <div class="find_notice_wrap">
+            <!-- js 연동 -->
+          </div>
+        </div>
+      </div>
+      <!--End 찾은 공고 -->
+      <!--Start 앱 설치 -->
+      <div class="app">
+        <div class="layout">
+          <div class="app_info_wrap">
+            <div class="app_info_box">
+              <div class="app_img">
+                <img src="images/img_install_guide.png" alt="이미지" />
+              </div>
+              <div class="app_text_wrap">
+                <div class="app_title">슥삭 앱 설치 안내</div>
+                <div class="app_sub_title">
+                  슥삭 앱에서 더 편리하게 공고를 추천 받고 일정을 관리할 수
+                  있어요
+                </div>
+                <div class="app_bt_wrap">
+                  <button class="app_bt_a">
+                    <img src="images/ic_app_store.png" alt="애플 로고" /> App
+                    Store에서 보기
+                  </button>
+                  <button class="app_bt_g">
+                    <img
+                      src="images/ic_google_play.png"
+                      alt="플레이스토어 로고"
+                    />
+                    Google Play에서 보기
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </main>
-      <!-- 영역구분 : 하단 -->
-      <footer class="footer"></footer>
+      </div>
+      <!--End 앱 설치 -->
+      <!-- Start 하단 -->
+      <footer class="footer">
+        <div class="layout">
+          <div class="footer_top_wrap">
+            <div class="footer_top_left">
+              <h4>고객센터</h4>
+              <a href="#">전화 010-4824-3999</a>
+              <p>운영시간 10:00 - 19:00(토·일, 공휴일 휴무)</p>
+              <p>점심시간 12:30 - 14:00</p>
+            </div>
+            <div class="footer_top_mid">
+              <h4>회사</h4>
+              <a href="#">회사 소개</a>
+              <a href="#">서비스 소개</a>
+              <a href="#">채용</a>
+            </div>
+            <div class="footer_top_right">
+              <h4>비즈니스</h4>
+              <a href="#">광고 문의</a>
+              <a href="#">공고 등록</a>
+            </div>
+          </div>
+          <div class="footer_bottom">하단</div>
+        </div>
+      </footer>
+      <!-- End 하단 -->
     </div>
   </body>
 </html>
