@@ -1,36 +1,28 @@
 .hot {
-  margin: 0 202px;
-  min-height: 660px;
+  min-height: 677px;
   display: flow-root;
-  background-color: #fff;
-  /* border-bottom: 1px solid #000; */
-  padding-top: 30px;
+  padding-top: 65px;
 }
-.hot .layout {
-  /* 또는 제거 */
-  background-color: transparent;
-}
-.hot_notice_title {
-  padding-left: 28px;
-  /* background-color: red; */
-  padding-bottom: 17px;
-  font-size: 22px;
 
-  font-weight: 600;
+.hot_notice_title {
+  /* background-color: red ; */
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 31px;
+  padding-left: 10px;
 }
 .hot_notice_title .point {
-  color: #4263ff;
+  color: #5a64f9;
 }
 .hot_notice_wrap {
   position: relative;
 
   overflow: visible;
-  /* background-color: green; */
-  padding-left: 5px;
-  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr; /* 2열 구성 */
-  gap: 8px 30px; /* row-gap, column-gap */
+  /* row-gap, column-gap */
+  gap: 14px 30px;
 }
 .hot_notice_wrap::after {
   content: "";
@@ -39,12 +31,15 @@
 }
 
 .hot_notice_box {
+
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: flex-start;
-  gap: 0px;
-  padding: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 42px;
   border-radius: 12px;
   width: 488px;
   cursor: pointer;
@@ -78,7 +73,7 @@
   /* background-color: red; */
   display: flex;
   align-items: flex-start;
-  gap: 14px;
+  gap: 15px;
 }
 
 .hot_notice_box .notice_img {
@@ -122,23 +117,22 @@
   transform-origin: center center;
 }
 .notice_text {
-  /* background-color: red; */
   /* display: flex; */
+  /* padding-right: 42px; */
   position: relative;
   flex-direction: column;
   justify-content: space-between;
   height: 102px;
-  gap: 2px;
   width: 322px;
 }
 .notice_category {
   display: inline-block; /*글자에 맞춘 박스 만들기 */
   border-radius: 4px;
-  padding: 2px 5px;
+  padding: 5px;
   font-size: 11px;
-  color: #3366ff;
-  font-weight: 400;
-  background-color: #e1e7f8;
+  color: #406ff4;
+  font-weight: 500;
+  background-color: #eff3fe;
   margin-bottom: 2px;
   white-space: nowrap;
   line-height: 1;
@@ -146,6 +140,8 @@
   /* -webkit-line-clamp: 2; */
 }
 .notice_title {
+  padding-top: 7px;
+  /* background-color: red; */
   font-size: 15px;
   color: #333;
   font-weight: 500;
@@ -159,7 +155,7 @@
 .notice_d_day {
   position: absolute;
   bottom: 0;
-  color: #000;
+  color: #1c1c1c;
   font-size: 17px;
   font-weight: 600;
 }
