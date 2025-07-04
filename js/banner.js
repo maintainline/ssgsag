@@ -24,6 +24,30 @@ window.addEventListener("DOMContentLoaded", () => {
       image: "images/banner_4.png",
       alt: "배너 4",
     },
+    {
+      id: 1,
+      link: "#",
+      image: "images/banner_1.png",
+      alt: "배너 1",
+    },
+    {
+      id: 2,
+      link: "#",
+      image: "images/banner_2.png",
+      alt: "배너 2",
+    },
+    {
+      id: 3,
+      link: "#",
+      image: "images/banner_3.png",
+      alt: "배너 3",
+    },
+    {
+      id: 4,
+      link: "#",
+      image: "images/banner_4.png",
+      alt: "배너 4",
+    },
   ];
 
   const total = apiData.length;
@@ -50,7 +74,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const swiper = new Swiper(".sw_banner", {
       slidesPerView: "auto",
       spaceBetween: 80,
-      // 슬라이드 중앙에 위치하게 
+      // 슬라이드 중앙에 위치하게
       centeredSlides: true,
       loop: true,
       speed: 1500,
