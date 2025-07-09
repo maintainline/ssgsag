@@ -1,0 +1,9 @@
+.main {
+  position: relative;
+  display: block;
+  /* padding-top: 153px; */
+}
+
+.main_scroll {
+  padding-top: 90px;
+}

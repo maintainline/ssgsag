@@ -1,7 +1,7 @@
 .hot {
   min-height: 677px;
   display: flow-root;
-  padding-top: 65px;
+  padding: 56px 16px;
 }
 .hot .layout {
   width: 1024px;
@@ -13,7 +13,7 @@
   display: block;
   font-size: 24px;
   font-weight: 700;
-  padding-bottom: 31px;
+  padding-bottom: 24px;
   padding-left: 10px;
 }
 .hot_notice_title .point {
@@ -44,9 +44,7 @@
   padding-left: 8px;
   padding-right: 42px;
   border-radius: 12px;
-  width: 488px;
   cursor: pointer;
-  /* overflow: hidden; */
 
   /* 기존 이미지 및 텍스트 스타일 유지 */
   background-color: transparent;
@@ -73,14 +71,12 @@
   opacity: 1;
 }
 .notice_item {
-  /* background-color: red; */
   display: flex;
   align-items: flex-start;
   gap: 15px;
 }
 
 .hot_notice_box .notice_img {
-  width: 102px;
   height: 102px;
   flex-shrink: 0;
   border-radius: 8px;
@@ -101,7 +97,6 @@
   transform: scale(1.05);
 }
 .notice_img {
-  background-color: antiquewhite;
   width: 102px;
   height: 102px;
   border-radius: 8px;
@@ -120,8 +115,6 @@
   transform-origin: center center;
 }
 .notice_text {
-  /* display: flex; */
-  /* padding-right: 42px; */
   position: relative;
   flex-direction: column;
   justify-content: space-between;
@@ -129,7 +122,7 @@
   width: 322px;
 }
 .notice_category {
-  display: inline-block; /*글자에 맞춘 박스 만들기 */
+  display: inline-block; 
   border-radius: 4px;
   padding: 5px;
   font-size: 11px;
@@ -140,7 +133,6 @@
   white-space: nowrap;
   line-height: 1;
   vertical-align: middle;
-  /* -webkit-line-clamp: 2; */
 }
 .notice_title {
   padding-top: 7px;
@@ -150,8 +142,6 @@
   font-weight: 500;
   line-height: 1.4;
   margin-bottom: 4px;
-  -webkit-line-clamp: 2;
-  /* justify-content: space-between; */
   height: auto;
 }
 

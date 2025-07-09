@@ -1,8 +1,9 @@
 .button {
-  height: 237px;
+  /* height: 237px; */
 }
 .button_wrap {
-  padding-top: 55px;
+  margin-top: 15px;
+  margin-bottom: 55px;
   /* background-color: red; */
   gap: 65px;
   display: flex;
@@ -23,7 +24,7 @@
 .bt_activity p {
   background-color: #ff5247;
   position: absolute;
-  padding: 2px 4px;
+  padding: 4px 5px;
   color: #fff;
   top: -10px;
 
