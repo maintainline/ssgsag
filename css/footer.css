@@ -3,6 +3,10 @@
   height: 248px;
   display: flex;
 }
+.footer .layout {
+  width: 1024px;
+  margin: 0 auto;
+}
 
 .footer_top_wrap {
   padding-top: 61px;

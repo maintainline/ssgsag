@@ -1,16 +1,14 @@
 .app {
   background-color: rgb(240, 241, 246);
   height: 436px;
-}
-.app .layout {
-  background-color: rgb(240, 241, 246);
   border-top: 1px solid#eee;
   border-bottom: 1px solid#eee;
-  width: 986px;
+}
+.app .layout {
+  width: 1024px;
+  margin: 0 auto;
 }
 .app_info_wrap {
-  /* background-color: rgb(134, 143, 190); */
-
   padding: 60px;
   align-items: center;
   justify-content: center;

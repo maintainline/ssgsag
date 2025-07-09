@@ -14,7 +14,6 @@
 
 .swiper-slide {
   width: 640px;
-  margin: 0 auto;
 }
 
 /* a태그는 너비 높이를 줄수없다. */
@@ -32,9 +31,9 @@
 
 .banner_slide_prev {
   position: absolute;
-  left: 23%;
-  top: 2%;
-
+  left: 30%;
+  top: 50%;
+  display: f;
   align-items: center;
   justify-content: center;
 
@@ -45,15 +44,15 @@
   border-radius: 24px;
   cursor: pointer;
   z-index: 999;
-  transform: translateX(166px) translateY(240px);
+  transform: translateX(35px);
 }
 .banner_slide_prev img {
   transform: rotate(180deg);
 }
 .banner_slide_next {
   position: absolute;
-  right: 23%;
-  top: 2%;
+  right: 30%;
+  top: 50%;
 
   align-items: center;
   justify-content: center;
@@ -65,7 +64,7 @@
   border-radius: 24px;
   cursor: pointer;
   z-index: 999;
-  transform: translateX(-166px) translateY(240px);
+  transform: translateX(-35px);
 }
 .banner_slide_pg {
   display: flex;
@@ -77,4 +76,13 @@
 
 .banner_slide_pg .swiper-pagination-bullet-active {
   background-color: #202020;
+}
+
+@media all and (max-width: 767px) {
+  .banner_slide_prev {
+    display: none;
+  }
+  .banner_slide_next {
+    display: none;
+  }
 }

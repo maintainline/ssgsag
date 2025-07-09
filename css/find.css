@@ -5,7 +5,10 @@
   border-top: 1px solid #dadada;
   display: block;
 }
-
+.find .layout {
+  width: 1024px;
+  margin: 0 auto;
+}
 .find_notice_title {
   padding-top: 65px;
   display: block;

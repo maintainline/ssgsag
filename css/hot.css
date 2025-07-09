@@ -3,6 +3,10 @@
   display: flow-root;
   padding-top: 65px;
 }
+.hot .layout {
+  width: 1024px;
+  margin: 0 auto;
+}
 
 .hot_notice_title {
   /* background-color: red ; */
@@ -31,7 +35,6 @@
 }
 
 .hot_notice_box {
-
   overflow: hidden;
   position: relative;
   display: flex;
