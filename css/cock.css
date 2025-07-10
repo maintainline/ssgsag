@@ -142,3 +142,16 @@
 
   color: #1b1b1c;
 }
+
+/* 반응형 */
+@media all and (max-width: 768px) {
+  .cock {
+    padding: 32px 16px;
+  }
+  .cock_main_title {
+    font-size: 18px;
+  }
+  .cock_main_title b {
+    font-size: 18px;
+  }
+}

@@ -82,3 +82,12 @@
   background-color: #202020;
 }
 
+/* 반응형 */
+@media all and (max-width: 768px) {
+  .banner {
+    padding-bottom: 5px;
+  }
+  .banner_wrap {
+    padding-top: 30px;
+  }
+}
