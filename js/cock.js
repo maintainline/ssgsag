@@ -64,9 +64,6 @@ window.addEventListener("load", function () {
 
   const cockList = document.querySelector(".cock_list");
 
-  if (cockList) {
     cockList.innerHTML = html;
-  } else {
-    console.error("⚠️ .cock_list 요소를 찾을 수 없습니다.");
-  }
+
 });

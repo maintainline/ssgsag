@@ -32,18 +32,22 @@
 }
 .cock_list {
   display: flex;
+  /* flex-wrap: wrap; */
+  /* white-space: nowrap; */
   gap: 8px;
   width: 100%;
 }
 
 .cock_item {
   flex-direction: column;
+  flex-wrap: wrap;
+
   display: flex;
   width: 25%;
 }
 
 .cock_item_box {
-  transform: translateX(11px) translateY(-2%);
+  transform: translateY(-2%);
   background-color: none;
   border-radius: 15px;
 
@@ -69,7 +73,6 @@
 
 .cock_item_preview {
   position: relative;
-
   width: 100%;
   height: 224px;
   display: flex;
@@ -109,7 +112,6 @@
 
 .cock_text {
   position: relative;
-
   margin: 0 4px;
   /* 텍스트 요소는 무조건 block , 아래 act display 안먹음  */
   display: block;
@@ -147,11 +149,25 @@
 @media all and (max-width: 768px) {
   .cock {
     padding: 32px 16px;
+    height: auto;
+  }
+  .cock_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .cock_main_title {
     font-size: 18px;
   }
   .cock_main_title b {
     font-size: 18px;
+  }
+  .cock_item {
+    margin: 0 20px;
+    width: 48%;
+    max-width: 320px;
+  }
+  .cock_list {
+    flex-wrap: wrap;
   }
 }
