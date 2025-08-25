@@ -1,6 +1,8 @@
 .app {
   background-color: rgb(240, 241, 246);
   height: 436px;
+  padding: 56px 18px;
+
   border-top: 1px solid#eee;
   border-bottom: 1px solid#eee;
 }
@@ -9,25 +11,24 @@
   margin: 0 auto;
 }
 .app_info_wrap {
-  padding: 60px;
-  align-items: center;
-  justify-content: center;
+
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 .app_info_box {
-  transform: translateX(-60px);
   display: flex;
-
   align-items: center;
   border-radius: 20px;
   background-color: #fff;
   height: 320px;
-  width: 988px;
+  padding: 40px;
+  /* width: 988px; */
 }
 .app_img {
   position: relative;
   width: 362px;
   height: 242px;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   border-radius: 10px;
 }
 .app_img img {
@@ -35,14 +36,13 @@
   overflow: hidden;
 }
 .app_text_wrap {
-  position: relative;
-  /* background-color: red; */
+  /* position: relative; */
   margin-bottom: 70px;
-  /* display: flex; */
   margin-left: 48px;
 }
 .app_title {
-  margin-bottom: 22px;
+  margin-top: 45px;
+  margin-bottom: 16px;
   font-size: 24px;
   font-weight: 700;
 }
@@ -50,12 +50,10 @@
   font-size: 16px;
   font-weight: 400;
   color: #77797b;
+  margin-bottom: 40px;
 }
 .app_bt_wrap {
-  /* background-color: red; */
-  white-space: nowrap;
-  position: absolute;
-  /* transform: translateY(100%); */
+
   display: flex;
   align-items: center;
   justify-content: center;

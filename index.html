@@ -19,9 +19,14 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <!-- common 연결 -->
+    <link rel="stylesheet" href="css/common.css" />
+    <!-- layout 연결 -->
+    <link rel="stylesheet" href="css/layout.css" />
     <!-- header 연결 -->
     <link rel="stylesheet" href="css/header.css" />
+    <!-- main 연결 -->
+    <link rel="stylesheet" href="css/main.css" />
     <!-- banner 연결 -->
     <link rel="stylesheet" href="css/banner.css" />
     <script src="js/banner.js"></script>
@@ -66,133 +71,151 @@
           </div>
         </div>
       </header>
+      <!--  start 모바일 헤더 -->
+      <div class="m_header">
+        <div class="m_header_wrap">
+          <div class="m_header_left">
+            <img src="images/logo_ssgsag.svg" alt="슥삭로고" />
+          </div>
+          <div class="m_header_right">
+            <img src="images/ic_menu.svg" alt="슥삭로고" />
+          </div>
+        </div>
+      </div>
+      <!-- end 모바일 헤더 -->
       <!-- End 상단 -->
-      <!-- Start 배너 -->
-      <div class="banner">
-        <!-- 배너 슬라이드 -->
-        <div class="banner_wrap">
-          <!-- swiper -->
-          <div class="swiper sw_banner">
-            <div class="swiper-wrapper">
-              <!-- api 연동 -->
-            </div>
-          </div>
-
-          <!-- 버튼 생성 -->
-          <button class="banner_slide_prev">
-            <img src="images/icon_linkArrow.svg" alt="이전" />
-          </button>
-          <button class="banner_slide_next">
-            <img src="images/icon_linkArrow.svg" alt="다음" />
-          </button>
-          <!-- 페이지 네이션 -->
-          <div class="banner_slide_pg">페이지 네이션</div>
-        </div>
-      </div>
-      <!-- End 배너 -->
-      <!-- Start 버튼 카테고리 -->
-      <div class="button">
-        <div class="button_wrap">
-          <button class="bt_activity">
-            <p>HOT</p>
-            <div class="img_box">
-              <img src="images/ic_activity.png" alt="대외활동" />
-            </div>
-            <a href="#">대외활동</a>
-          </button>
-          <button class="bt_contest">
-            <div class="img_box">
-              <img src="images/ic_contest.png" alt="공모전" />
-            </div>
-            <a href="#">공모전</a>
-          </button>
-          <button class="bt_intern">
-            <div class="img_box">
-              <img src="images/ic_internship.png" alt="인턴십" />
-            </div>
-            <a href="#">인턴십</a>
-          </button>
-          <button class="bt_education">
-            <div class="img_box">
-              <img src="images/ic_education.png" alt="교육·강연" />
-            </div>
-            <a href="#">교육·강연</a>
-          </button>
-        </div>
-      </div>
-      <!-- End 버튼 카테고리 -->
-      <!--Start 콕 공고 -->
-      <div class="cock">
-        <div class="cock_wrap">
-          <p class="cock_main_title">슥삭이 <b>콕</b> 집은 공고</p>
-          <div class="cock_list">
-            <!-- js작업 -->
-            <div class="cock_item"></div>
-          </div>
-        </div>
-      </div>
-      <!--End 콕 공고 -->
-      <!--Start 핫 공고 -->
-      <div class="hot">
-        <div class="layout">
-          <h2 class="hot_notice_title">
-            <span class="point">요즘</span> 핫한 공고만 찾고 있다면?
-          </h2>
-          <div class="hot_notice_wrap">
-            <!-- js 연동 -->
-          </div>
-        </div>
-      </div>
-      <!--End 핫 공고 -->
-      <!--Start 찾은 공고 -->
-      <div class="find">
-        <div class="layout">
-          <h2 class="find_notice_title">
-            <span class="find_point">방금</span> 게시된 공고만 찾고 있다면?
-          </h2>
-          <div class="find_notice_wrap">
-            <!-- js 연동 -->
-          </div>
-        </div>
-      </div>
-      <!--End 찾은 공고 -->
-      <!--Start 앱 설치 -->
-      <div class="app">
-        <div class="layout">
-          <div class="app_info_wrap">
-            <div class="app_info_box">
-              <div class="app_img">
-                <img src="images/img_install_guide.png" alt="이미지" />
+      <!-- Start 내용 구분 영역 -->
+      <main class="main">
+        <!-- Start 배너 -->
+        <div class="banner">
+          <!-- 배너 슬라이드 -->
+          <div class="banner_wrap">
+            <!-- swiper -->
+            <div class="swiper sw_banner">
+              <div class="swiper-wrapper">
+                <!-- api 연동 -->
               </div>
-              <div class="app_text_wrap">
-                <div class="app_title">슥삭 앱 설치 안내</div>
-                <div class="app_sub_title">
-                  슥삭 앱에서 더 편리하게 공고를 추천 받고 일정을 관리할 수
-                  있어요
-                </div>
-                <div class="app_bt_wrap">
-                  <button class="app_bt_a">
-                    <a href="#"
-                      ><img src="images/ic_app_store.png" alt="애플 로고" />App
-                      Store에서 보기</a
-                    >
-                  </button>
-                  <button class="app_bt_g">
-                    <a href="#">
-                      <img
-                        src="images/ic_google_play.png"
-                        alt="플레이스토어 로고"
-                      />
-                      Google Play에서 보기
-                    </a>
-                  </button>
-                </div>
+              <!-- 버튼 생성 -->
+            </div>
+            <button class="banner_slide_prev">
+              <img src="images/icon_linkArrow.svg" alt="이전" />
+            </button>
+            <button class="banner_slide_next">
+              <img src="images/icon_linkArrow.svg" alt="다음" />
+            </button>
+            <!-- 페이지 네이션 -->
+            <div class="banner_slide_pg">페이지 네이션</div>
+          </div>
+        </div>
+        <!-- End 배너 -->
+        <!-- Start 버튼 카테고리 -->
+        <div class="button">
+          <div class="button_wrap">
+            <button class="bt_activity">
+              <p>HOT</p>
+              <div class="img_box">
+                <img src="images/ic_activity.png" alt="대외활동" />
+              </div>
+              <a href="#">대외활동</a>
+            </button>
+            <button class="bt_contest">
+              <div class="img_box">
+                <img src="images/ic_contest.png" alt="공모전" />
+              </div>
+              <a href="#">공모전</a>
+            </button>
+            <button class="bt_intern">
+              <div class="img_box">
+                <img src="images/ic_internship.png" alt="인턴십" />
+              </div>
+              <a href="#">인턴십</a>
+            </button>
+            <button class="bt_education">
+              <div class="img_box">
+                <img src="images/ic_education.png" alt="교육·강연" />
+              </div>
+              <a href="#">교육·강연</a>
+            </button>
+          </div>
+        </div>
+        <!-- End 버튼 카테고리 -->
+        <!--Start 콕 공고 -->
+        <div class="cock">
+          <div class="cock_wrap">
+            <p class="cock_main_title">슥삭이 <b>콕</b> 집은 공고</p>
+            <div class="cock_list">
+              <div class="cock_item">
+                <!-- js작업 -->
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!--End 앱 설치 -->
+        <!--End 콕 공고 -->
+        <!--Start 핫 공고 -->
+        <div class="hot">
+          <div class="layout">
+            <h2 class="hot_notice_title">
+              <span class="point">요즘</span> 핫한 공고만 찾고 있다면?
+            </h2>
+            <div class="hot_notice_wrap">
+              <!-- js 연동 -->
+            </div>
+          </div>
+        </div>
+        <!--End 핫 공고 -->
+        <!--Start 찾은 공고 -->
+        <div class="find">
+          <div class="layout">
+            <h2 class="find_notice_title">
+              <span class="find_point">방금</span> 게시된 공고만 찾고 있다면?
+            </h2>
+            <div class="find_notice_wrap">
+              <!-- js 연동 -->
+            </div>
+          </div>
+        </div>
+        <!--End 찾은 공고 -->
+        <!--Start 앱 설치 -->
+        <div class="app">
+          <div class="layout">
+            <div class="app_info_wrap">
+              <div class="app_info_box">
+                <div class="app_img">
+                  <img src="images/img_install_guide.png" alt="이미지" />
+                </div>
+                <div class="app_text_wrap">
+                  <div class="app_title">슥삭 앱 설치 안내</div>
+                  <div class="app_sub_title">
+                    슥삭 앱에서 더 편리하게 공고를 추천 받고 일정을 관리할 수
+                    있어요
+                  </div>
+                  <div class="app_bt_wrap">
+                    <button class="app_bt_a">
+                      <a href="#"
+                        ><img
+                          src="images/ic_app_store.png"
+                          alt="애플 로고"
+                        />App Store에서 보기</a
+                      >
+                    </button>
+                    <button class="app_bt_g">
+                      <a href="#">
+                        <img
+                          src="images/ic_google_play.png"
+                          alt="플레이스토어 로고"
+                        />
+                        Google Play에서 보기
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End 앱 설치 -->
+      </main>
+      <!-- End 내용 구분 영역 -->
       <!-- Start 하단 -->
       <footer class="footer">
         <div class="layout">

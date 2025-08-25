@@ -1,2 +1,7 @@
-.layout {
+html {
+  overflow-x: hidden;
+}
+
+.wrap {
+  overflow: hidden;
 }

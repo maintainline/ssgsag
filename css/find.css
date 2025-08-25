@@ -4,15 +4,15 @@
   height: 885px;
   border-top: 1px solid #dadada;
   display: block;
+  padding: 56px 16px;
 }
 .find .layout {
   width: 1024px;
   margin: 0 auto;
 }
 .find_notice_title {
-  padding-top: 65px;
   display: block;
-  padding-bottom: 5px;
+  padding-bottom: 24px;
   font-size: 24px;
   font-weight: 700;
 }
@@ -23,7 +23,6 @@
 }
 
 .find_notice_wrap {
-  padding-top: 35px;
   /* background-color: red !important; */
 
   gap: 10px;
@@ -39,10 +38,10 @@
   position: relative;
   width: 240px;
   height: 343px;
-  /* background-color: red; */
   border-radius: 15px;
   display: flex;
-  flex-direction: column; /* 세로 방향 정렬 */
+  /* 세로 방향 정렬 */
+  flex-direction: column;
   /* 수평 가운데 정렬 */
   align-items: center;
   /* 수직 가운데 정렬 */
@@ -50,6 +49,7 @@
   text-align: center;
   cursor: pointer;
   overflow: hidden;
+  padding: 8px 8px 12px 8px;
 
   background-color: transparent;
   transition: transform 0.3s ease;
@@ -74,20 +74,23 @@
 }
 
 .find_item {
+  /* background-color: aqua; */
+
   position: relative;
 }
 .find_img {
   overflow: hidden;
-  width: 225px;
   height: 225px;
-  background-color: aqua;
   border-radius: 13px;
+  padding-bottom: 12px;
 }
 
 .find_notice_box .find_img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border: 1px solid #eee;
+
   border-radius: 8px;
   transition: transform 0.3s ease;
   /* 기본상태는 원래 크기 */
@@ -98,17 +101,15 @@
   transform: scale(1.05);
 }
 .find_text {
+  display: block;
   text-align: left;
-  padding-top: 8px;
-  /* background-color: red; */
-  width: 224px;
+  margin: 0 4px;
 }
 .find_category {
   padding: 5px 5px;
   border-radius: 3px;
   display: inline-block;
   background-color: rgba(255, 240, 232, 0.562);
-  line-height: 11px;
   font-weight: 500;
   font-size: 11px;
   color: rgb(253, 143, 76);

@@ -1,7 +1,9 @@
 .footer {
   /* background-color: red; */
-  height: 248px;
+  /* height: 248px; */
   display: flex;
+  padding: 56px 18px;
+
 }
 .footer .layout {
   width: 1024px;
@@ -9,7 +11,7 @@
 }
 
 .footer_top_wrap {
-  padding-top: 61px;
+  /* padding-top: 61px; */
   display: flex;
   padding-bottom: 48px;
 }

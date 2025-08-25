@@ -73,7 +73,7 @@ window.addEventListener("DOMContentLoaded", () => {
   function makeSlide() {
     const swiper = new Swiper(".sw_banner", {
       slidesPerView: "auto",
-      spaceBetween: 80,
+      spaceBetween: 12,
       // 슬라이드 중앙에 위치하게
       centeredSlides: true,
       loop: true,
@@ -89,6 +89,12 @@ window.addEventListener("DOMContentLoaded", () => {
       pagination: {
         el: ".banner_slide_pg",
         clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: "auto",
+          spaceBetween: 80,
+        },
       },
     });
     return swiper;

@@ -3,6 +3,7 @@
   height: 523px;
   border-top: 1px solid#ebebeb;
   border-bottom: 1px solid#ebebeb;
+  padding: 56px 16px;
 }
 
 .cock_wrap {
@@ -11,15 +12,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 24px;
 
   background-color: rgb(247 247 255);
 }
 
 .cock_main_title {
   margin: 0;
-  /* background-color: red; */
-  padding-top: 65px;
-  padding-bottom: 40px;
   width: 100%;
   padding-left: 15px;
   font-size: 24px;
@@ -33,27 +32,29 @@
 }
 .cock_list {
   display: flex;
-  gap: 28px; /* 아이템 사이 간격 */
-  flex-wrap: wrap; /* 줄바꿈 허용 */
+  /* flex-wrap: wrap; */
+  /* white-space: nowrap; */
+  gap: 8px;
   width: 100%;
 }
 
 .cock_item {
   flex-direction: column;
+  flex-wrap: wrap;
 
   display: flex;
-  width: 224px;
+  width: 25%;
 }
 
 .cock_item_box {
-  position: absolute;
-  transform: translateX(11px) translateY(-2%);
+  transform: translateY(-2%);
   background-color: none;
   border-radius: 15px;
 
-  width: 242px;
+  width: 100%;
   height: 351px;
   cursor: pointer;
+  padding: 8px 8px 12px 8px;
 }
 .cock_item_box::before {
   content: "";
@@ -62,30 +63,24 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(220, 226, 255, 0.3); /* 예시: 어두운 오버레이 */
-  opacity: 0;
-  transition: opacity 0.3s ease;
   border-radius: 15px;
-  pointer-events: none; /* 클릭 막지 않음 */
 }
 
 .cock_item_box:hover::before {
-  opacity: 1;
+  background-color: #ebedf6;
+  z-index: 0;
 }
 
 .cock_item_preview {
-  position: absolute;
-  transform: translateX(4%) translateY(3%);
-  width: 224px;
+  position: relative;
+  width: 100%;
   height: 224px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 6px;
-
-  overflow: hidden;
   border-radius: 13px;
   z-index: 1;
+  overflow: hidden;
 }
 .cock_item_preview img {
   width: 100%;
@@ -98,7 +93,8 @@
 }
 
 .cock_item_preview:hover img {
-  transform: scale(1.1); /* 5% 확대 */
+  /* 확대 */
+  transform: scale(1.1);
 }
 
 .cock_item_preview::before {
@@ -108,38 +104,35 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(41, 41, 41, 0.04); /*검정투명*/
+
   border-radius: 13px;
   z-index: 2;
-  pointer-events: none; /* 클릭 막지 않게 */
   z-index: 2;
 }
 
 .cock_text {
-  padding-left: 10px;
-  padding-top: 234px;
-  /* background-color: red; */
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  position: relative;
+  margin: 0 4px;
+  /* 텍스트 요소는 무조건 block , 아래 act display 안먹음  */
+  display: block;
+  z-index: 10;
 }
 .cock_act {
-  /* 왼쪽 으로 보내기 margin */
-  margin-top: 6px;
-  margin-right: auto;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  display: inline-block;
   background-color: #e7ebfe;
   border-radius: 4px;
   font-size: 11px;
   font-weight: 500;
   color: #3e6cf4;
-  padding: 3px 5px;
-  left: 0;
+  padding: 5px;
 }
 .cock_title {
   font-size: 15px;
   font-weight: 500;
   color: #424244;
-  z-index: 50;
+  /* transition: all 0.3s; */
 }
 
 .cock_day {
@@ -150,4 +143,31 @@
   font-size: 17px;
 
   color: #1b1b1c;
+}
+
+/* 반응형 */
+@media all and (max-width: 768px) {
+  .cock {
+    padding: 32px 16px;
+    height: auto;
+  }
+  .cock_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cock_main_title {
+    font-size: 18px;
+  }
+  .cock_main_title b {
+    font-size: 18px;
+  }
+  .cock_item {
+    margin: 0 20px;
+    width: 48%;
+    max-width: 320px;
+  }
+  .cock_list {
+    flex-wrap: wrap;
+  }
 }

@@ -1,8 +1,9 @@
 .button {
-  height: 237px;
+  /* height: 237px; */
 }
 .button_wrap {
-  padding-top: 55px;
+  margin-top: 15px;
+  margin-bottom: 55px;
   /* background-color: red; */
   gap: 65px;
   display: flex;
@@ -23,7 +24,7 @@
 .bt_activity p {
   background-color: #ff5247;
   position: absolute;
-  padding: 2px 4px;
+  padding: 4px 5px;
   color: #fff;
   top: -10px;
 
@@ -149,4 +150,75 @@
 
   color: #565956;
   text-decoration: none;
+}
+/* 반응형 */
+@media all and (max-width: 768px) {
+  .button_wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    margin-top: 11px;
+    margin-bottom: 20px;
+    padding: 9px 20px 0px 20px;
+  }
+  .bt_activity {
+    gap: 8px;
+  }
+  .bt_activity .img_box {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+  }
+  .bt_activity img {
+    width: 40px;
+    height: 40px;
+  }
+  .bt_activity a {
+    font-size: 13px;
+  }
+  .bt_contest {
+    gap: 8px;
+  }
+  .bt_contest .img_box {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+  }
+  .bt_contest img {
+    width: 40px;
+    height: 40px;
+  }
+  .bt_contest a {
+    font-size: 13px;
+  }
+  .bt_intern {
+    gap: 8px;
+  }
+  .bt_intern .img_box {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+  }
+  .bt_intern img {
+    width: 40px;
+    height: 40px;
+  }
+  .bt_intern a {
+    font-size: 13px;
+  }
+  .bt_education {
+    gap: 8px;
+  }
+  .bt_education .img_box {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+  }
+  .bt_education img {
+    width: 40px;
+    height: 40px;
+  }
+  .bt_education a {
+    font-size: 13px;
+  }
 }

@@ -1,19 +1,23 @@
 .banner {
   position: relative;
   padding: 40px 0px;
+  /* margin-top: 72px; */
+  overflow: hidden;
 }
 
 .banner_wrap {
+  position: relative;
   padding-top: 80px;
-  height: 100%;
+  overflow: hidden;
 }
 
-.sw_banner {
+/* .sw_banner {
   overflow: visible;
-}
+} */
 
 .swiper-slide {
   width: 640px;
+  overflow: hidden;
 }
 
 /* a태그는 너비 높이를 줄수없다. */
@@ -31,9 +35,9 @@
 
 .banner_slide_prev {
   position: absolute;
-  left: 30%;
+  left: calc(50% - 320px);
   top: 50%;
-  display: f;
+  display: flex;
   align-items: center;
   justify-content: center;
 
@@ -44,14 +48,14 @@
   border-radius: 24px;
   cursor: pointer;
   z-index: 999;
-  transform: translateX(35px);
+  transform: translateX(-22px);
 }
 .banner_slide_prev img {
   transform: rotate(180deg);
 }
 .banner_slide_next {
   position: absolute;
-  right: 30%;
+  right: calc(50% - 320px);
   top: 50%;
 
   align-items: center;
@@ -64,7 +68,7 @@
   border-radius: 24px;
   cursor: pointer;
   z-index: 999;
-  transform: translateX(-35px);
+  transform: translateX(22px);
 }
 .banner_slide_pg {
   display: flex;
@@ -78,11 +82,12 @@
   background-color: #202020;
 }
 
-@media all and (max-width: 767px) {
-  .banner_slide_prev {
-    display: none;
+/* 반응형 */
+@media all and (max-width: 768px) {
+  .banner {
+    padding-bottom: 5px;
   }
-  .banner_slide_next {
-    display: none;
+  .banner_wrap {
+    padding-top: 30px;
   }
 }
