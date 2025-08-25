@@ -21,11 +21,69 @@
   grid-template-columns: 1fr 1fr; /* 2열 구성 */
   gap: 24px 40px; /* row-gap, column-gap */
 }
+
+.hot_notice_box {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 10px;
+  border-radius: 12px;
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+
+  /* 기존 이미지 및 텍스트 스타일 유지 */
+  background-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.hot_notice_box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* 박스 반투명 */
+  background-color: rgba(230, 230, 230, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hot_notice_box:hover::before {
+  opacity: 1;
+}
 .notice_item {
   /* background-color: red; */
   display: flex;
   align-items: flex-start;
   gap: 14px;
+}
+
+.hot_notice_box .notice_img {
+  width: 102px;
+  height: 102px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.hot_notice_box .notice_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.hot_notice_box:hover .notice_img img {
+  /* 살짝 확대 */
+  transform: scale(1.05);
 }
 .notice_img {
   background-color: antiquewhite;
@@ -42,6 +100,9 @@
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
+  /* 부드럽게 확대되도록 설정 */
+  transition: transform 0.4s ease;
+  transform-origin: center center;
 }
 .notice_text {
   /* background-color: red; */
@@ -81,7 +142,7 @@
 .notice_d_day {
   position: absolute;
   bottom: 0;
-  color: red;
+  color: #000;
   font-size: 17px;
   font-weight: 600;
 }
