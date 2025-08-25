@@ -1,48 +1,27 @@
 .banner {
   position: relative;
-  height: 520px;
-}
-.layout {
-  /* unicode-bidi: isolate; */
+  padding: 40px 0px;
 }
 
 .banner_wrap {
-  overflow: visible !important;
-  position: relative;
-  /* background-color: red; */
-  padding-bottom: 20px;
-  padding-top: 110px;
+  padding-top: 80px;
+  height: 100%;
 }
 
-.layout .banner_wrap {
-}
-
-.banner_slide {
-  /* background-color: red; */
-  position: relative;
-  display: flex;
-  justify-content: center;
-  padding: 0 20px;
-}
 .sw_banner {
-  /* display: contents; */
-  /* justify-content: center; */
-  width: 100vw;
-  overflow: visible !important;
+  overflow: visible;
 }
+
 .swiper-slide {
   width: 640px;
-  /* padding:0 213px; */
-  padding: 0 40px;
 }
 
+/* a태그는 너비 높이를 줄수없다. */
 .banner_slide_item {
   display: block;
   overflow: hidden;
-
-  width: 640px;
   height: 320px;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 .banner_slide_item img {
   width: 100%;
@@ -52,10 +31,9 @@
 
 .banner_slide_prev {
   position: absolute;
-  left: 0;
-  top: 0;
-
-  display: flex;
+  left: 30%;
+  top: 50%;
+  display: f;
   align-items: center;
   justify-content: center;
 
@@ -66,17 +44,16 @@
   border-radius: 24px;
   cursor: pointer;
   z-index: 999;
-  transform: translateX(166px) translateY(240px);
+  transform: translateX(35px);
 }
 .banner_slide_prev img {
   transform: rotate(180deg);
 }
 .banner_slide_next {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 30%;
+  top: 50%;
 
-  display: flex;
   align-items: center;
   justify-content: center;
 
@@ -87,16 +64,25 @@
   border-radius: 24px;
   cursor: pointer;
   z-index: 999;
-  transform: translateX(-166px) translateY(240px);
+  transform: translateX(-35px);
 }
 .banner_slide_pg {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding-top: 30px;
-  scale: 85%;
+  padding-top: 24px;
+  scale: 75%;
+  gap: 1px;
 }
 
 .banner_slide_pg .swiper-pagination-bullet-active {
-  background-color: #202020; /* 파란색 */
+  background-color: #202020;
+}
+
+@media all and (max-width: 767px) {
+  .banner_slide_prev {
+    display: none;
+  }
+  .banner_slide_next {
+    display: none;
+  }
 }

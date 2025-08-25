@@ -1,7 +1,10 @@
-.button_item {
-  padding-bottom: 30px;
+.button {
+  height: 237px;
+}
+.button_wrap {
+  padding-top: 55px;
   /* background-color: red; */
-  gap: 53px;
+  gap: 65px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,30 +12,31 @@
 .bt_activity {
   position: relative;
   display: flex;
-  flex-direction: column; /* ✅ 위에서 아래로 정렬 */
-  align-items: center; /* 가운데 정렬 */
-  gap: 15px; /* 요소 간 간격 */
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 
   border: none;
   background: none;
   cursor: pointer;
 }
 .bt_activity p {
-  background-color: red;
+  background-color: #ff5247;
   position: absolute;
-  padding: 2px 6px;
+  padding: 2px 4px;
   color: #fff;
+  top: -10px;
+
   font-size: 12px;
   font-weight: 700;
-  border-radius: 10px;
-  transform: translateY(-100%);
+  border-radius: 20px;
 }
 
 .bt_activity .img_box {
   width: 80px;
   height: 80px;
-  background-color: #f7f7f7; /* ✅ 원하는 박스 색상 */
-  border-radius: 25px; /* ✅ 모서리 둥글게 (선택) */
+  background-color: #f7f7f7;
+  border-radius: 25px;
 
   display: flex;
   align-items: center;
@@ -45,14 +49,16 @@
 }
 .bt_activity a {
   font-size: 17px;
-  color: #000;
+  font-weight: 500;
+  color: #565956;
+
   text-decoration: none;
 }
 .bt_contest {
   display: flex;
-  flex-direction: column; /* ✅ 위에서 아래로 정렬 */
-  align-items: center; /* 가운데 정렬 */
-  gap: 15px; /* 요소 간 간격 */
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 
   border: none;
   background: none;
@@ -62,8 +68,8 @@
 .bt_contest .img_box {
   width: 80px;
   height: 80px;
-  background-color: #f7f7f7; /* ✅ 원하는 박스 색상 */
-  border-radius: 25px; /* ✅ 모서리 둥글게 (선택) */
+  background-color: #f7f7f7;
+  border-radius: 25px;
 
   display: flex;
   align-items: center;
@@ -75,15 +81,17 @@
 }
 .bt_contest a {
   font-size: 17px;
+  font-weight: 500;
 
-  color: #000;
+  color: #565956;
+
   text-decoration: none;
 }
 .bt_intern {
   display: flex;
-  flex-direction: column; /* ✅ 위에서 아래로 정렬 */
-  align-items: center; /* 가운데 정렬 */
-  gap: 15px; /* 요소 간 간격 */
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 
   border: none;
   background: none;
@@ -92,8 +100,8 @@
 .bt_intern .img_box {
   width: 80px;
   height: 80px;
-  background-color: #f7f7f7; /* ✅ 원하는 박스 색상 */
-  border-radius: 25px; /* ✅ 모서리 둥글게 (선택) */
+  background-color: #f7f7f7;
+  border-radius: 25px;
 
   display: flex;
   align-items: center;
@@ -105,15 +113,17 @@
 }
 .bt_intern a {
   font-size: 17px;
+  font-weight: 500;
 
-  color: #000;
+  color: #565956;
+
   text-decoration: none;
 }
 .bt_education {
   display: flex;
-  flex-direction: column; /* ✅ 위에서 아래로 정렬 */
-  align-items: center; /* 가운데 정렬 */
-  gap: 15px; /* 요소 간 간격 */
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 
   border: none;
   background: none;
@@ -122,8 +132,8 @@
 .bt_education .img_box {
   width: 80px;
   height: 80px;
-  background-color: #f7f7f7; /* ✅ 원하는 박스 색상 */
-  border-radius: 25px; /* ✅ 모서리 둥글게 (선택) */
+  background-color: #f7f7f7;
+  border-radius: 25px;
 
   display: flex;
   align-items: center;
@@ -135,7 +145,8 @@
 }
 .bt_education a {
   font-size: 17px;
+  font-weight: 500;
 
-  color: #000;
+  color: #565956;
   text-decoration: none;
 }
